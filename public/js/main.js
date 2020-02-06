@@ -114,9 +114,7 @@ let class1 = document.getElementsByClassName('done')
 
 //all
 all.addEventListener('click', () => {
-  edit.classList.add('bg-light', 'col-1')
-  valider.classList.add('bg-light', 'col-1')
-  delete1.classList.add('bg-light', 'col-1')
+
   for (var i=0;i<groupli.length;i+=1){
     groupli[i].style.display = 'block';
     
@@ -127,9 +125,7 @@ all.addEventListener('click', () => {
 //done
 done.addEventListener('click', () => {
   class1 = document.getElementsByClassName('done')
-  edit.classList.add('bg-light', 'col-1')
-  valider.classList.add('bg-light', 'col-1')
-  delete1.classList.add('bg-light', 'col-1')
+
   for (var i=0;i<groupli.length;i+=1){
   groupli[i].style.display = 'none';
   
@@ -146,10 +142,6 @@ done.addEventListener('click', () => {
 todo.addEventListener('click', () => {
   class1 = document.getElementsByClassName('done')
   groupli = document.getElementsByClassName('li')
-  edit.classList.add('bg-light', 'col-1')
-  valider.classList.add('bg-light', 'col-1')
-  delete1.classList.add('bg-light', 'col-1')
-
   for (var i=0;i<groupli.length;i+=1){
     groupli[i].style.display = 'block';
     
