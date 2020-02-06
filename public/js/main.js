@@ -23,7 +23,9 @@ add_task.addEventListener('click', (event) => {
   list_all.appendChild(li)
   li.classList.add( 'li', 'bg-light', 'p-3', 'row')
 
-
+  
+  //drag
+  li.setAttribute("draggable", "true")
   
   input.value = ""
 
@@ -112,7 +114,9 @@ let class1 = document.getElementsByClassName('done')
 
 //all
 all.addEventListener('click', () => {
-
+  edit.classList.add('bg-light', 'col-1')
+  valider.classList.add('bg-light', 'col-1')
+  delete1.classList.add('bg-light', 'col-1')
   for (var i=0;i<groupli.length;i+=1){
     groupli[i].style.display = 'block';
     
@@ -123,7 +127,9 @@ all.addEventListener('click', () => {
 //done
 done.addEventListener('click', () => {
   class1 = document.getElementsByClassName('done')
-
+  edit.classList.add('bg-light', 'col-1')
+  valider.classList.add('bg-light', 'col-1')
+  delete1.classList.add('bg-light', 'col-1')
   for (var i=0;i<groupli.length;i+=1){
   groupli[i].style.display = 'none';
   
@@ -140,17 +146,18 @@ done.addEventListener('click', () => {
 todo.addEventListener('click', () => {
   class1 = document.getElementsByClassName('done')
   groupli = document.getElementsByClassName('li')
+  edit.classList.add('bg-light', 'col-1')
+  valider.classList.add('bg-light', 'col-1')
+  delete1.classList.add('bg-light', 'col-1')
+
   for (var i=0;i<groupli.length;i+=1){
     groupli[i].style.display = 'block';
     
  }
- console.log('he')
+
 
   for (var i=0;i<class1.length;i+=1){
     class1[i].style.display = 'none';
     
 }
  })
-
-
- 
